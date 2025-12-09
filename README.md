@@ -1,73 +1,91 @@
 # gov-cyber-pipeline-k12
 
-🛡️ D.C. Future Defenders: K-12 Cybersecurity & AI Pipeline
+The Sentry Initiative: K-12 Federal Cyber Pipeline
 
-🏛️ Mission
+Project Status: Active Pilot (Washington D.C. Capital Region)
+Framework Alignment: NIST NICE (SP 800-181), MITRE ATLAS, OWASP LLM
 
-To cultivate a domestic talent pipeline for the U.S. federal government and national defense sectors, starting at the K-12 level.
+1. Executive Summary
 
-This repository contains a full-stack curriculum designed to take high school students with zero experience and prepare them for CyberCorps® Scholarship for Service (SFS) programs and entry-level federal internships.
+The Sentry Initiative is a specialized workforce development curriculum designed to address the critical shortage of cybersecurity professionals within the U.S. federal government. Unlike general IT education programs, this initiative focuses exclusively on the skills required to defend National Critical Infrastructure (NCI).
 
-📋 Curriculum Modules
+The curriculum is engineered to serve as a direct talent pipeline for federal agencies (CISA, NSA, DOE) by training high-potential K-12 students in the National Capital Region (NCR). A primary deliverable of the program is the student-led development of two proprietary defense assets: "The Sovereign Data Vault" (secure cloud infrastructure) and "The Sentinel App" (AI anomaly detection).
 
-Phase 1: The Operator's Mindset (Foundations)
+2. Strategic Objectives
 
-Linux Command Line: Moving away from the GUI.
+The initiative supports Executive Order 14110 (Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence) by establishing three core competencies in the pre-collegiate workforce:
 
-Networking: How the internet actually works (TCP/IP, DNS).
+Data Segregation Doctrine: Architecting cloud environments that enforce strict separation between public, private, and classified data assets.
 
-Python for Defense: Automating security tasks.
+AI Defense: Operationalizing the MITRE ATLAS framework to detect and mitigate adversarial attacks on machine learning models.
 
-Phase 2: Cyber Defense (NICE Category: Protect & Defend)
+Federal Compliance: Familiarizing students with FedRAMP, NIST SP 800-53, and other government-specific security controls.
 
-Traffic Analysis: Identifying anomalies using Wireshark.
+3. Curriculum Architecture
 
-Blue Team Operations: System hardening and log analysis.
+The pedagogy is divided into three progressive modules, each mapping to specific Knowledge, Skills, and Abilities (KSAs) defined in the NIST NICE Workforce Framework.
 
-Aligned with NICE Role: Cyber Defense Analyst (PR-CDA-001)
+Module 01: Cloud Data Sovereignty
 
-Phase 3: AI Safety & Governance (The Future)
+Focus: Secure Infrastructure Design
 
-LLM Vulnerabilities: Understanding Prompt Injection and Jailbreaking.
+Topic 1.1: Virtual Private Cloud (VPC) Architecture for Classified Workloads.
 
-Algorithmic Bias: Testing models for fairness (crucial for gov use).
+Topic 1.2: Identity and Access Management (IAM) and Principle of Least Privilege.
 
-AI Red Teaming: Adversarial testing of AI systems.
+Topic 1.3: Implementation of FedRAMP High Baseline controls in simulated environments.
 
- NICE Framework Mapping
+Core Project: Construction of "The Sovereign Data Vault" — Students architect and deploy a fully air-gapped cloud environment designed to store classified data, implementing zero-trust egress rules and strict IAM policies.
 
-We map every lab to specific Knowledge, Skills, and Abilities (KSAs) defined by NIST.
+NICE Role Alignment: Cyber Defense Infrastructure Support Specialist (PR-INF-001).
 
-Module
+Module 02: AI Counter-Adversarial Operations
 
-NICE Work Role
+Focus: Machine Learning Security (MLSec)
 
-Competency ID
+Topic 2.1: Introduction to the MITRE ATLAS Matrix (Adversarial Threat Landscape for AI Systems).
 
-02_Defensive_Ops
+Topic 2.2: Detection of Model Inversion and Membership Inference Attacks.
 
-Cyber Defense Analyst
+Topic 2.3: Data Sanitization pipelines to prevent Training Data Poisoning.
 
-K0001: Knowledge of computer networking concepts and protocols.
+Core Project: Development of "The Sentinel App" — Students engineer a local Python-based AI agent capable of detecting and flagging adversarial inputs in real-time network traffic.
 
-03_AI_Safety
+NICE Role Alignment: Research & Development Specialist (SP-TRD-001).
 
-R&D Specialist
+Module 03: Large Language Model (LLM) Governance
 
-S0001: Skill in designing countermeasures to identified security risks.
+Focus: Generative AI Security
 
-🚀 Deployment
+Topic 3.1: Mitigation of Prompt Injection and Jailbreaking attempts (OWASP LLM01).
 
-This curriculum is designed to be "forked" and deployed by:
+Topic 3.2: Prevention of Sensitive Information Disclosure in Government Chatbots (OWASP LLM06).
 
-High School CTE Programs
+Topic 3.3: Developing "System Constitutions" for AI alignment.
 
-JROTC Cyber Units
+4. Implementation Methodology
 
-Non-Profit After School Programs
+This repository serves as the central knowledge base for the curriculum. Educators and technical leads can deploy the modules using the following structure:
 
-🤝 Contributing
+/curriculum/labs: Jupyter Notebooks containing Python-based defense simulations.
 
-We welcome contributions from industry professionals and educators. Please see CONTRIBUTING.md for details on how to submit a Pull Request.
+/curriculum/policy: PDF templates for System Security Plans (SSP) and Incident Response plans.
 
-Built in Washington D.C. for the next generation of public servants.
+/curriculum/capstone: Scenario packets for the "Sector Defense" simulation (Energy, Finance, Healthcare).
+
+5. Usage and Contribution
+
+This project is open-source to encourage collaboration among educators, federal workforce directors, and industry partners.
+
+For Educators
+
+Clone this repository to access the raw lesson plans and lab environments. All materials are designed to be deployed in standard educational Learning Management Systems (LMS) or GitHub Codespaces.
+
+For Federal Partners
+
+Agencies wishing to propose new modules based on emerging threats should submit a Pull Request or open an Issue titled "Curriculum Alignment Request."
+
+6. License
+
+This project is licensed under the MIT License.
+Copyright (c) 2024 The Sentry Initiative. All Rights Reserved.
